@@ -1,198 +1,141 @@
-header{
-    background-color:#ffffff;
-    border-bottom: 2px solid #06D6A0;
-    height: 75px;
-
+header {
+  background-color: #ffffff;
+  border-bottom: 2px solid #06d6a0;
+  height: 75px;
 }
 
-#nav-bar-intro-name{
-border: 1px solid #06D6A0;
-float: left;
-margin-top: 23px;
-margin-left: 50px;
-height: 50px;
-width: 160px;
-text-align: center;
-background-color: #06D6A0;
+#nav-bar-intro-name {
+  border: 1px solid #06d6a0;
+  float: left;
+  margin-top: 23px;
+  margin-left: 50px;
+  height: 50px;
+  width: 160px;
+  text-align: center;
+  background-color: #06d6a0;
 }
 
-h5{
-    margin-top: 10px;
-    color: #ffffff;
-    
+h5 {
+  margin-top: 10px;
+  color: #ffffff;
 }
 
-
-  #about-me{
-      margin-top: 10rem;
-  }
-
-
-
-
-  body, html {
-    height: 100%;
-    margin: 0;
-  }
-  
-  .bg {
-    /* The image used */
-    background-image: url("https://www.designbold.com/academy/wp-content/uploads/2017/12/tools-1024x709.png");
-  
-    /* Full height */
-    height: 90%; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-
-#intro-des{
-    padding-left: 4rem;
-    padding-right: 4rem;
-    margin-bottom: 6rem;
-    
-   
+#about-me {
+  margin-top: 10rem;
 }
 
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
 
-  #my-intro-name{
-      color: #06D6A0;
-      position: absolute;
+.bg {
+  /* The image used */
+  background-image: url("https://www.designbold.com/academy/wp-content/uploads/2017/12/tools-1024x709.png");
+
+  /* Full height */
+  height: 90%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#intro-des {
+  padding-left: 4rem;
+  padding-right: 4rem;
+  margin-bottom: 6rem;
+}
+
+#my-intro-name {
+  color: #06d6a0;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding-bottom: 120px;
   font-size: 70px;
-
-  
-
-  }
-
-  #about-intro {
-    
-    font-size: 20px;
-   padding: 10px 100px 100px 100px;
-    letter-spacing: 3px;
-    
-  }
-
-
-  #intro{
-      max-width: auto;
-      padding-top: 3rem;
-  }
-
-  #aboutMe{
-      
-    margin-left:13%;
-    font-size: 70px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
-    letter-spacing: 3px;
-    padding-bottom: 3rem;
-    width: 85rem;
-    max-width: 600px;
-  }
-
-
-  #portfolio{
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 70px;
-      
-  }
-
-
-
-  #education-sec{
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      font-size: 70px;
-  }
-
-
-
-
-
-
-#contact{
-margin-top: 10rem;
 }
 
+#about-intro {
+  font-size: 20px;
+  padding: 10px 100px 100px 100px;
+  letter-spacing: 3px;
+}
 
-  .location-date{
-      font-family: Georgia, 'Times New Roman', Times, serif
-  }
+#intro {
+  max-width: auto;
+  padding-top: 3rem;
+}
 
-  .contact-info{
-      margin-left: 0px
-  }
+#aboutMe {
+  margin-left: 13%;
+  font-size: 70px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
-  .col-lg{
-      
-      font-size: 20px;
-      letter-spacing: 3px;
-  }
-  
-  #portfolio-section{
-      padding-left: 10rem;
-      max-width: 100%;
-      max-height: 100%
-  }
+  letter-spacing: 3px;
+  padding-bottom: 3rem;
+  width: 85rem;
+  max-width: 600px;
+}
 
+#portfolio {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 70px;
+}
 
+#education-sec {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 70px;
+}
 
-  #copyright{
-      margin-left: 45%;
-      padding-top: 9px;
-  }
+.col-lg {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
 
+* {
+  box-sizing: border-box;
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Create three equal columns that floats next to each other */
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
   .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    width: 100%;
   }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
+}
 
+* {
+  box-sizing: border-box;
+}
 
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Create two equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
